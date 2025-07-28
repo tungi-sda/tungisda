@@ -1,0 +1,280 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  outline: none;
+}
+
+/* Layout & Background */
+.home-bg{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(1, 2, 5, 0.795)), url(images/camporeebg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow-y: hidden;
+}
+
+/* Navigation */
+.topnav {
+  background: rgba(0, 0, 0, 0.65);
+  background-size: fit-content;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 2%;
+}
+
+/* Make the logo image fully rounded */
+nav img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff; /* Optional: adds a white border for contrast */
+}
+.row {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: rgba(0, 0, 0, 0.35); /* Soft, dark translucent background */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Soft shadow for a floating card effect */
+  backdrop-filter: blur(4px); /* Optional: smooth glassmorphism blur */
+  -webkit-backdrop-filter: blur(4px); /* Safari support */
+}
+
+/* Make text inside the .row white */
+.row h1 {
+  font-size: 32px;
+  color: rgba(255, 226, 209, 0.75);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-family: 'Poppins', sans-serif;
+}
+
+.row p {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+nav .fa {
+  display: none;
+  color: #fff;
+  font-size: 22px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 1px 5px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fcc40bd0;
+  font-size: 16px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  display: block;
+  margin: auto;
+  width: 0%;
+  height: 2px;
+  background: red;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+/* Header Content */
+.logo2 h1 {
+  font-size: large;
+  font-weight: 650;
+  color: rgba(255, 226, 209, 0.75);
+  font-style: oblique;
+  font-family: sans-serif;
+  margin-top: 0.5cm;
+  text-align: left;
+}
+
+
+
+/* Contact Icons */
+.contacts {
+  margin-left: 17cm;
+  margin-top: 4cm;
+  display: inline-flex;
+}
+
+.conts {
+  display: inline-flex;
+  margin-right: 16px;
+  transition: padding 0.3s;
+}
+
+.conts:hover {
+  padding-block: 6px;
+}
+
+.conts a img {
+  height: 30px;
+}
+
+/* Sidebar (optional) */
+.home-tabs {
+  background: rgb(52, 56, 56);
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  text-align: center;
+  z-index: 2;
+  transition: 1s;
+}
+
+.home-tabs a {
+  display: block;
+  padding: 20px 0 10px 15px;
+  width: 200px;
+  color: antiquewhite;
+  text-decoration: dotted;
+}
+
+.home-tabs a i {
+  margin-right: 10px;
+}
+
+.home-tabs a:hover {
+  color: #4af705;
+}
+
+/* Toggle Icons */
+.main .fa,
+.backg .fa {
+  display: block;
+  font-size: 22px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.backg .fa {
+  font-size: 35px;
+  color: #f1f1f1ee;
+  background: #0e0e0e;
+  width: fit-content;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 900px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: rgb(2, 66, 68);
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: center;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav .fa {
+    display: block;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .home-bg {
+    height: 70vh;
+  }
+
+  .row h1 {
+    font-size: 28px;
+  }
+
+  .row p {
+    font-size: 17px;
+  }
+
+  .pemail {
+    font-size: 14px;
+  }
+
+  .contacts {
+    margin-left: 6cm;
+    margin-top: 2.5cm;
+  }
+
+  .conts a img {
+    height: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo2 h1 {
+    font-size: large;
+  }
+
+  .row h1 {
+    font-size: 24px;
+  }
+
+  .pemail {
+    font-size: 11px;
+  }
+
+  nav img {
+    width: 130px;
+  }
+
+  .contacts {
+    margin-left: 3cm;
+    margin-top: 1.5cm;
+  }
+
+  .conts a img {
+    height: 20px;
+  }
+}

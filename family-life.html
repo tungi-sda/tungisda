@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Family Life</title>
+        <meta name="description" content="Register for Upcoming events, trainings available/facilited by West Zambia Conference Adventist Youth Ministries.">
+        <meta http-equiv="content-language" content="en-us">
+        <link rel="icon" href="images/tungi_logo.jpg">
+        <link rel="stylesheet" href="forms.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+ 
+<body>
+
+<section class="home-bg">
+    <section class="topnav">
+        <nav>
+            <a href="index.html"><img src="images/tungi_logo.jpg" alt="logo"></a>
+            <section><div><h2 class="logo2">Family Life</h2></div></section>
+            <div class="nav-links" Id="nav-Links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Back Home</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+</section><br>
+    <h2></h2>
+    <div>
+        <form class="form2" method="post" action="https://script.google.com/macros/s/AKfycby6Ovr6I9qWmikATn9fFP6isYND2PgScqb12qcr-W2qryFEr3epv4GHg6CfwaXDZs_uTA/exec" name="registrations">
+      <h3 class="hero-btn2">Family Life</h3>
+      <input name="date" id="date" placeholder="Date" readonly required>
+      <input name="Name" placeholder="Your Name" required>
+      <select name="Gender" required>
+        <option disabled selected>-----Select Gender-----</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+      <input type="email" name="email" id="email" placeholder="Email Address" required>
+      <input name="Phone" id="Phone" placeholder="Phone No." required>
+      <select name="status" id="status" required>
+        <option disabled selected>----Marital Status----</option>
+        <option>Married</option>
+        <option>Single</option>
+        <option>Courtship</option>
+        <option>Widow</option>
+        <option>Widower</option>
+        <option>Divorced</option>
+      </select>
+
+      <input type="number" name="Courting" id="Courting" placeholder="No. in Courtship" required>
+
+      <select name="reg-worship" id="reg-worship" required>
+        <option disabled selected>Conduct Regular Worship?</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <select name="verspers" id="verspers" required>
+        <option disabled selected>Attend Prayer Sessions/Verspers?</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <select name="f-beliefs" id="f-beliefs" required>
+        <option disabled selected>Learn or Revise Fundamental Beliefs?</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <select name="study-guide" id="study-guide" required>
+        <option disabled selected>Have Sabbath School Study Guide?</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <select name="library" id="library" required>
+        <option disabled selected>Have Home Library?</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <select name="literature" id="literature" required>
+        <option disabled selected>Study Adventist Literature?</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <select name="invitation" id="invitation" required>
+        <option disabled selected>Invited Others to Church?</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <select name="book-dist" id="book-dist" required>
+        <option disabled selected>Distributed Book of the Year?</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <input type="text" name="evangelistic-act" name="evangelistic-act" placeholder="Other Evangelistic Activities Involved in" required>
+
+      <button type="submit"><b>Submit</b></button>
+    </form>
+    </div>          
+
+<!------- JavaScript for Toggle Menu -------->
+  <script>
+
+    var navLinks = document.getElementById("nav-Links");
+    function showMenu(){
+    navLinks.style.right = "0";
+    }
+    function hideMenu(){
+    navLinks.style.right = "-200px";
+    }
+
+    </script>
+
+</section>   
+</body>
+</html>

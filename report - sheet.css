@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+.home-bg {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(26, 2, 2, 0.7), rgba(4, 9, 30, 0.7)),
+              url(images/ca.jpg) center/cover no-repeat;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+}
+nav img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff; /* Optional: adds a white border for contrast */
+}
+
+.logo2 {
+  color: rgba(255, 226, 209, 0.75);
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul {
+  list-style: none;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #ffc400;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    position: absolute;
+    background: #024244;
+    width: 200px;
+    height: auto;
+    top: 0;
+    right: -200px;
+    text-align: center;
+    z-index: 100;
+    transition: 0.5s;
+    padding-top: 2rem;
+  }
+
+  nav .fa {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 15px;
+  }
+
+  .nav-links ul {
+    padding: 0;
+  }
+
+  .nav-links ul li {
+    display: block;
+    margin: 15px 0;
+  }
+}

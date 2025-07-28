@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prayer-Request</title>
+        <meta name="description" content="Register for Upcoming events, trainings available/facilited by West Zambia Conference Adventist Youth Ministries.">
+        <meta http-equiv="content-language" content="en-us">
+        <link rel="icon" href="images/tungi_logo.jpg">
+        <link rel="stylesheet" href="forms.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+ 
+<body>
+
+<section class="home-bg">
+    <section class="topnav">
+        <nav>
+            <a href="index.html"><img src="images/tungi_logo.jpg" alt="logo"></a>
+            <section><div><h2 class="logo2">Contact</h2></div></section>
+            <div class="nav-links" Id="nav-Links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Back Home</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+</section><br>
+    <h2></h2>
+    <div>
+        <form class="form2" class="form" action="https://script.google.com/macros/s/AKfycbx07dVrSV27tFbrMxixSJaTgBWNX0zFmf4ApI0JqvdTr6PD4uv8WRZNsuzcDpo1sdkM/exec" method="post">
+            <h3 class="hero-btn2">Prayer Request</h3>
+            <input name="Name" id="name" placeholder="Your Name" required>
+            <input name="Email" id="email" placeholder="email id" required>
+            <input name="Phone" id="phone" placeholder="phone no." required>
+            <textarea name="message" id="message" rows="4" placeholder="Your Special Prayer Request"></textarea>
+            <button type=""submit>Send</button>
+        </form>
+    </div>          
+
+<!------- JavaScript for Toggle Menu -------->
+  <script>
+
+    var navLinks = document.getElementById("nav-Links");
+    function showMenu(){
+    navLinks.style.right = "0";
+    }
+    function hideMenu(){
+    navLinks.style.right = "-200px";
+    }
+
+    </script>
+
+</section>  
+
+</section>   
+</body>
+</html>

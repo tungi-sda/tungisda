@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tungi SDA Church</title>
+  <meta name="description" content="Register for upcoming events, feature in WZC youth magazine, access Bible study and AY resources, upload/download SDA music, and more.">
+  <meta http-equiv="content-language" content="en-us">
+  
+  <link rel="icon" href="images/tungi_logo.jpg">
+  <link rel="stylesheet" href="style1 - Copy.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <section class="home-bg">
+    <section class="topnav">
+      <nav>
+        <a href="about.html">
+          <img src="images/tungi_logo.jpg" alt="Tungi SDA Church Logo">
+        </a>
+        <section class="logo2">
+          <div>
+            <h1>Tungi SDA<br>Church</h1>
+          </div>
+        </section>
+
+        <div class="nav-links" id="nav-Links">
+          <i class="fa fa-times" onclick="hideMainMenu()"></i>
+          <ul>
+            <li><a href="reports.html">Reports</a> <i class="fa fa-calendar-o" aria-hidden="true"></i></li>
+            <li><a href="prayer-request.html">Prayer Request</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></li>
+            <li><a href="contact.html">Contact Us</a> <i class="fa fa-phone" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMainMenu()"></i>
+      </nav>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="header5">
+      <br>
+      <div class="row">
+        <h1>Welcome to the Tungi SDA Church Personal/Family Reporting Platform!</h1>
+        <p>
+          On this platform, you can fill in the Family life and Personal Ministries department forms to assist the leaders capture required data for quarterly reports.
+         <br><br>
+          You can request for special prayers in the Prayer Band tab/page, and offer suggestions, or make enquiries via the "Contact Us" page.
+        </p>
+      </div>
+
+      <!-- Social Media & Contact Icons -->
+      <div class="contacts">
+        <div><a class="conts" href="https://web.facebook.com/profile.php?id=100064732599993"><img src="images/facebook.png" alt="Facebook" height="30" width="30"></a></div>
+        <div><a class="conts" href="tel:+260972293774"><img src="images/call.png" alt="Call" width="25"></a></div>
+        <div><a class="conts" href="https://www.youtube.com/@TungiSDAChurch-WZF"><img src="images/youtube1.png" alt="YouTube" width="60"></a></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- JavaScript Menu Toggle -->
+  <script>
+    // Main nav menu toggle
+    const navLinks = document.getElementById("nav-Links");
+
+    function showMainMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMainMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+    // Side/home tabs toggle (commented out version)
+    /*
+    const tabs = document.getElementById("tabs");
+
+    function showSideMenu() {
+      tabs.style.left = "0";
+    }
+
+    function hideSideMenu() {
+      tabs.style.left = "-250px";
+    }
+    */
+  </script>
+</body>
+</html>
